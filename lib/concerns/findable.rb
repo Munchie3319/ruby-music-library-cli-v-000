@@ -11,7 +11,7 @@ modeule Concerns::Findable
       find_by_name(name)
     end
   end
-end
+
 
 class Artist
   extend Concerns::Findable
