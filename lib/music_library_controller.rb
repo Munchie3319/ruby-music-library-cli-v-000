@@ -18,7 +18,7 @@ class MusicLibraryController
 
           user_input = gets.strip
 
-          case user_input 
+          case user_input
          when "list songs"
              list_songs
          when "list artists"
@@ -37,9 +37,9 @@ class MusicLibraryController
 
           unless user_input == "exit"
              call
-         end 
+         end
 
- 
+
       end
 
       def list_songs
@@ -82,5 +82,5 @@ class MusicLibraryController
 
   end
 
- 
+
  
