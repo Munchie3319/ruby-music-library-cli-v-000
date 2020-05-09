@@ -26,5 +26,5 @@ module Concerns::Findable
      extend Concerns::Findable
  end
 
- 
+
  
