@@ -1,10 +1,10 @@
 class MusicImporter
 
       def initialize(path)
-         @path = path 
+         @path = path
      end
 
-      def path 
+      def path
          @path
      end
 
