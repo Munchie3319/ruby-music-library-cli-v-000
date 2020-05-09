@@ -1,15 +1,15 @@
 class MusicImporter
 
   def initialize(path)
-    @path = path 
+    @path = path
   end
 
-  def path 
-    @path 
+  def path
+    @path
   end
 
   def files
-    @files = Dir.glob("#{@path}/*.mp3").collect{|file| 
+    @files = Dir.glob("#{@path}/*.mp3").collect{|file|
     file.gsub("#{@path}/", "")}
   end
 
