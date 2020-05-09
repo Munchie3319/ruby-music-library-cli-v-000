@@ -39,17 +39,17 @@ class MusicLibraryController
   end
 
 def list_songs
-  Song.all.sort {|a, b| a.name <=> b.name}.each.with_index(1) 
+  Song.all.sort {|a, b| a.name <=> b.name}.each.with_index(1)
   {|song, i| puts "#{i}. #{song.artist.name} - #{song.name} - #{song.genre.name}"}
 end
 
 def list_artists
-  Artist.all.sort {|a, b| a.name <=> b.name}.each.with_index(1) 
+  Artist.all.sort {|a, b| a.name <=> b.name}.each.with_index(1)
   {|artist, i| puts "#{i}. #{artist.name}"}
 end
 
 def list_genres
-  Genre.all.sort {|a, b| a.name <=> b.name}.each.with_index(1) 
+  Genre.all.sort {|a, b| a.name <=> b.name}.each.with_index(1)
   {|genre, i| puts "#{i}. #{genre.name}"}
 end
 
@@ -78,6 +78,3 @@ def play_song
       end
   end
 end
-
-   
-   
